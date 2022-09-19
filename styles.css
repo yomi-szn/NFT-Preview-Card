@@ -1,0 +1,133 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.body {
+    background-color: hsl(216, 50%, 16%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 21%;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 10px;
+}
+.img1 {
+    width: 100%;
+    
+}
+.img1 > img {
+    width: 100%;
+    border-radius: 10px;
+}
+.overlay {
+    background: url(images/icon-view.svg) center center hsla(178, 100%, 50%, 0.4) no-repeat;
+    position: absolute;
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+    top: 20px;
+    right: 20px;
+    width: 88%;
+    height: 51.5%;
+    border-radius: 10px;
+}
+.img1:hover .overlay {
+    opacity: 1;
+}
+h3 {
+    color: white;
+    font-size: 20px!important;
+}
+h3:hover {
+    color: hsl(178, 100%, 50%);
+}
+.p1, .small1, .small2 {
+    width: 100%;
+}
+.p1 {
+    color: hsl(215, 51%, 70%);
+}
+.smalls {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+#small1 {
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 17px;
+}
+#eth {
+    margin-right: 5px;
+}
+#clock {
+    margin: 0 5px;
+}
+#small2 {
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+hr {
+    width: 100%;
+    border: 1px solid hsl(215, 32%, 27%);
+}
+.jules {
+    display: flex;
+    align-items: center;
+    color: white;
+    /* padding: 10px 0; */
+}
+.jules > img {
+    width: 10%;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+#jw:hover {
+    color: hsl(178, 100%, 50%);
+}
+em {
+    font-style: normal;
+    color: hsl(215, 51%, 70%);
+}
+.p2 {
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+@media (max-width: 500px) {
+    .body {
+        width: 70%;
+    }
+    h3 {
+        font-size: 25px!important;
+    }
+    .p1 {
+        font-size: 18px;
+    }
+    #small1, #small2 {
+        font-size: 19px;
+    }
+}
+@media (max-width: 400px) {
+    .body {
+        width: 70%;
+    }
+    h3 {
+        font-size: 22px!important;
+    }
+    .p1 {
+        font-size: 16px;
+    }
+    #small1, #small2 {
+        font-size: 16px;
+    }
+}
